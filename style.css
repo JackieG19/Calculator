@@ -81,3 +81,11 @@ body, div, a {
     width:49px;
     float:right;
 }
+
+#side a {
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    float: right;
+    font-size: 32px;
+}

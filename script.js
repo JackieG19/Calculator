@@ -7,9 +7,9 @@ $(document).ready(function(){
             if (number.length > 15) {
                 number = "";
                 totalDiv.text("Err");
-            }
-        } 
-    };
+            }//if
+        }//if 
+    };//var
    
 var Num = "number";
 var newNum = "newNumber";
@@ -18,14 +18,15 @@ var op = "operator";
 var totalDiv = $("#total");
     totalDiv.text("0");
 
-/*$("#numbers > a").not("#clear,#clearall").click(function(){
+$("#numbers > a").not("#clear,#clearall").click(function(){
 		number += $(this).text();
 		totalDiv.text(number);
-		testNumLength(number);  */    
+		testNumLength(number); 
+    });
     
-$("#numbers a").not("#clear,#clearAll").click(function(){number.append(this.html());
-    testNumLength(number);
-    }); 
+//$("#numbers a").not("#clear,#clearAll").click(function(){number.append(this.html());
+   // testNumLength(number); 
+    
     
     $("#operators a").not("#equals").click(function(){
        operator = $(this).text();
@@ -59,44 +60,5 @@ $("#numbers a").not("#clear,#clearAll").click(function(){number.append(this.html
 		testNumLength(number);
 		number = "";
 		newNumber = "";
-    });
-    
-    $(document).keypress(function(event){
-        var keycode = (event.keyCode ? event.keyCode : event.which);
-        if (keycode === 49) {
-            $("#one").click();
-       } else if (keycode === 50) {
-            $("#two").click();
-        } else if (keycode === 51) {
-            $("#three").click();
-        } else if (keycode === 52) {
-            $("#four").click();
-        } else if (keycode === 53) {
-            $("#five").click();
-        } else if (keycode === 54) {
-            $("#six").click();
-        } else if (keycode === 55) {
-            $("#seven").click();
-        } else if (keycode === 56) {
-            $("#eight").click();
-        } else if (keycode === 57) {
-            $("#nine").click();
-        } else if (keycode === 48) {
-            $("#zero").click();
-        } else if (keycode === 97) {
-            $("#clearall").click();
-        } else if (keycode === 99) {
-            $("#clear").click();
-        } else if (keycode === 61) {
-            $("#equals").click();
-        } else if (keycode === 43) {
-            $("#plus").click();
-        } else if (keycode === 45) {
-            $("#minus").click();
-        } else if (keycode === 42 || keycode === 120) {
-            $("#multiply").click();
-        } else if (keycode === 47) {
-            $("#divide").click();
-        } 
-    });
-});
+    });//equal
+});//document
