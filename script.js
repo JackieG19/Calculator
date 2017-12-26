@@ -1,4 +1,4 @@
-/* global $ */
+/* global $ number */
 
 $(document).ready(function(){
 	var testNumLength = function(number) {
@@ -14,5 +14,11 @@ $(document).ready(function(){
 var Num = "number";
 var newNum = "newnumber";
 var op = "operator";
-var totaldiv = $("#total").text();
+//var totaldiv = $("#total").text();
+var totaldiv = $("#total");
+    totaldiv.text("0");
+    
+$("#numbers a").not("#clear,#clearall").click(function(){number.append(this.html());
+            testNumLength(number);
+    });    
 });
